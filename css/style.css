@@ -1,0 +1,201 @@
+/* resetting css */
+
+a{
+    text-decoration: none;
+}
+
+
+/* normalize css */
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* header start */
+
+
+#header{
+    padding: 30px;
+    background-color: #000;
+    
+}
+
+#header a{
+    color: #fff;
+}
+
+#header .logo h1 a{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#header .nav-menu ul li {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+#header .nav-menu ul li a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#header .nav-menu ul li::before{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #E9204F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 3px;
+    transition: .5s ease;
+}
+
+#header .nav-menu ul li:hover::before{
+    width: 30px;
+}
+
+#header .nav-menu ul li:first-child::before{
+    width: 30px !important;
+}
+
+#header .nav-menu ul li:last-child::before{
+    width: 0px !important;
+}
+/* css selector */
+
+/* nth-child, last-child, first-child */
+
+/* header end */
+
+
+/* ======================= */
+
+
+/* digital agency section start */
+
+#digital-agency{
+    background-color: #000;
+    height: 100vh;
+}
+#digital-agency .all{
+    position: relative;
+}
+
+#digital-agency .digital-text h1{
+    color: #fff;
+    font-size: 70px;
+    width: 70%;
+    position: relative;
+}
+
+#digital-agency .digital-text h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #E9204F;
+    left: 0;
+}
+
+#digital-agency .digital-text a{
+    padding: 10px 20px;
+    border: 1px solid #E9204F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#digital-agency .digital-text a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #E9204F;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+#digital-agency .digital-text a:hover::before{
+    width: 100%;
+}
+
+#digital-agency .digital-image{
+    height: 700px;
+}
+#digital-agency .digital-image img{
+    height: 100%;
+    object-fit: cover;
+}
+
+#digital-agency .agency-box{
+    width: 33.333%;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #1b1b1b;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#digital-agency .agency-box:hover{
+    background-color: #E9204F;
+}
+
+#digital-agency .agency-box:hover .active-icon{
+    color: #fff;
+    transition: .5s ease;
+}
+
+.active-box{
+    background-color: #E9204F !important;
+}
+
+#digital-agency .agency-box .statistica{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+#digital-agency .agency-box .active-icon{
+    color: #E9204F;
+}
+
+#digital-agency .agency-box h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+#digital-agency .agency-box h2::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffff;
+}
+
+#digital-agency .agency-box p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    width: 90%;
+    margin-top: 40px;
+}
+
+#digital-agency .bottom-agency{
+    position: absolute;
+    top: 80%;
+}
