@@ -58,3 +58,7 @@
 .img-fluid{
     width: 100%;
 }
+
+.flex-wrap{
+    flex-wrap: wrap;
+}

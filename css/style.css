@@ -78,124 +78,193 @@ body{
 
 /* digital agency section start */
 
+
 #digital-agency{
     background-color: #000;
-    height: 100vh;
-}
-#digital-agency .all{
     position: relative;
 }
 
-#digital-agency .digital-text h1{
+#digital-agency .top-digital .digital-text {
+    width: 50%;
+    margin-top:100px;
+}
+
+#digital-agency .top-digital .digital-text h1{
     color: #fff;
     font-size: 70px;
-    width: 70%;
-    position: relative;
+    width: 90%;
 }
 
-#digital-agency .digital-text h1::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 40px;
-    height: 3px;
-    background-color: #E9204F;
-    left: 0;
-}
-
-#digital-agency .digital-text a{
-    padding: 10px 20px;
-    border: 1px solid #E9204F;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 50px;
+#digital-agency .top-digital .digital-text a{
     display: inline-block;
+    margin-top: 60px;
+    border: 1px solid #E9204F;
+    padding: 17px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
     position: relative;
     z-index: 1;
 }
-
-#digital-agency .digital-text a::before{
-    content: '';
-    position: absolute;
+#digital-agency .top-digital .digital-text a::before{
+    content:'';
+    top: 0;
+    left: 0%;
     width: 0%;
     height: 100%;
     background-color: #E9204F;
-    top: 0;
-    left: 0;
+    position: absolute;
     z-index: -1;
     transition: .5s ease;
 }
 
-#digital-agency .digital-text a:hover::before{
+#digital-agency .top-digital .digital-text a:hover::before{
     width: 100%;
 }
 
-#digital-agency .digital-image{
-    height: 700px;
+
+#digital-agency .top-digital .digital-image{
+    height: 850px;
+    width: 50%;
+    margin-right: 120px;
 }
-#digital-agency .digital-image img{
-    height: 100%;
+#digital-agency .top-digital .digital-image img{
+    height: 850px;
+    width: 100%;
     object-fit: cover;
 }
 
-#digital-agency .agency-box{
-    width: 33.333%;
-    padding: 20px;
-    margin-right: 20px;
-    background-color: #1b1b1b;
-    cursor: pointer;
-    transition: .5s ease;
+
+#digital-agency .bottom-digital{
+    position: absolute;
+    top: 64%;
+    left: 0;
 }
 
-#digital-agency .agency-box:hover{
-    background-color: #E9204F;
-}
 
-#digital-agency .agency-box:hover .active-icon{
-    color: #fff;
-    transition: .5s ease;
-}
-
-.active-box{
+#digital-agency .bottom-digital .active{
     background-color: #E9204F !important;
+  }
+  
+
+#digital-agency .bottom-digital .box{
+  width: 33.333%;
+  padding: 40px 20px;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 20px;
+  background-color: #1b1b1b;
 }
 
-#digital-agency .agency-box .statistica{
+
+#digital-agency .bottom-digital .box i, h3, p{
     color: #fff;
-    font-size: 32px;
+}
+
+#digital-agency .bottom-digital .box i{
+    font-size: 48px;
+}
+
+#digital-agency .bottom-digital .box h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+#digital-agency::after{
+    content: '';
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    background-color: #E9204F;
+    top: 100%;
+    left: 50%;
+}
+
+/* digital agency end */
+
+
+#services{
+    margin-top: 100px;
+}
+
+
+#services .service-head{
     margin-bottom: 40px;
 }
 
-#digital-agency .agency-box .active-icon{
-    color: #E9204F;
-}
-
-#digital-agency .agency-box h2{
-    font-size: 36px;
-    font-weight: 600;
-    color: #fff;
+#services .service-head h1{
+    font-weight: bolder;
+    font-size: 45px;
     position: relative;
 }
-#digital-agency .agency-box h2::before{
+
+#services .service-head h1::before{
     content: '';
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 30px;
+    width: 40px;
     height: 3px;
-    background-color: #ffff;
+    background-color: #E9204F;
+    top: 0%;
+    left: 0;
 }
 
-#digital-agency .agency-box p{
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    width: 90%;
-    margin-top: 40px;
+#services .service-head p{
+    color: #E9204F;
+    font-weight: bold;
+    font-size: 15px;
 }
 
-#digital-agency .bottom-agency{
-    position: absolute;
-    top: 80%;
+#services .service-category-content{
+    width: 32%;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: rgb(225, 222, 222);
+    overflow: hidden;
+    transition: .5s ease;
+    cursor: pointer;
 }
+
+#services .service-category-content i, h2{
+    display: flex;
+    align-items: center;
+}
+
+#services .service-category-content .hourse-ico{
+    color: #cccc;
+    font-size: 80px;
+    font-weight: bold;
+    transform: scale(0);
+    margin-left: -60px;
+    transition: .5s ease;
+}
+
+#services .service-category-content h2{
+    transform: translateX(-70px);
+    transition: .5s ease;
+}
+
+
+#services .service-category-content:hover{
+    background-color: #E9204F;
+}
+
+#services .service-category-content:hover .hourse-ico{
+    transform: scale(1);
+    margin-left: 0;
+}
+#services .service-category-content:hover h2{
+    transform: translateX(0);
+}
+
+#services .service-category-content .right-ico{
+    transition: .5s ease;
+}
+
+#services .service-category-content:hover .right-ico{
+    transform: translateX(10px);
+}
+
